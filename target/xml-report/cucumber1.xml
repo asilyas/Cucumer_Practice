@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="24.094">
+    <testcase classname="US001 TEST" name="_2" time="14.097">
+        <system-out>
+            <![CDATA[Given Kullanici qualityDemy sayfasina gider.................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Google Arama Testi" name="Nevzat istenilen karsilastirmayi yapsin" time="9.546">
+        <failure message="For input string: &quot;4,28&quot;" type="java.lang.NumberFormatException">
+            <![CDATA[Given Kullanici google sayfasina gider......................................passed
+Then Arama Kutusuna karsilastirma yapmak istedigi "Zloty to Tl" para birimlerini girer.passed
+Then Para birimlerinin karsilastirmasini alir...............................passed
+Then Verilen degerlerin 4 den kucuk oldugunu dogrular.......................failed
+Then Kullanici sayfayi kapatir..............................................skipped
+
+StackTrace:
+java.lang.NumberFormatException: For input string: "4,28"
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:543)
+	at stepdefinitions.US001StepDefinitions.verilenDegerlerinDenKucukOldugunuDogrular(US001StepDefinitions.java:53)
+	at ✽.Verilen degerlerin 4 den kucuk oldugunu dogrular(file:///C:/Users/Lenovo/IdeaProjects/T-108_CucumberPractice-main/src/test/resources/features/googleTest.feature:24)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
